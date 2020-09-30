@@ -38,6 +38,5 @@ class Main(Files,Imfile):
 
 
 if __name__ == "__main__":
-    # OF = Main([" 500 "," 503 "],".txt");
     OF = Main();
     OF.sech()

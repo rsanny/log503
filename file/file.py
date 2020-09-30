@@ -64,7 +64,6 @@ class Files(Search,Debug):
     def iterFile(self,ret="rt"):
         self.file()
         file = "{}/{}{}".format(self.tpath(),self.name,self.fileExtension)
-        # print(self.name)
         if self.exists(file) == True:
             with open(file,ret) as fred:
                 for file_line in fred:
@@ -107,7 +106,6 @@ class Files(Search,Debug):
     def search_filter(self):
         self.arResultCode = {}
         action = 0
-        # print(self.date,self.time)
         try:
             date = self.dataDate(self.date)
             print(date)
